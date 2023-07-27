@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            padding: 5;
+            margin: 5;
+            background-color: rgb(88, 84, 84);
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        span{
+            display:inline-flex;
+            border: 1px rgba(219, 212, 212, 0.253) ridge;
+            margin: 5px;
+            padding: 6px;
+            width: 9.3%;
+            height: 80px;
+            background-color: blueviolet;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            text-transform: capitalize;
+            font-weight: 600;
+            /* justify-content: space-evenly; */
+            color: rgba(228, 224, 224, 0);
+            border-radius: 6px;
+            /* box-shadow:5px -2px 3px  rgba(156, 151, 151, 0.473); */
+        
+        }
+        span:hover{
+           color: rgba(27, 27, 27, 0.801);
+           background-clip: border-box;
+           position:sticky;
+           transform:translate(-1px,-1px);
+        }
+        
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div>
+
+    </div>
+    <script src="0_React.Color.JS"></script>
+    <script src="./package/dist/sweetalert2.all.min.js"></script>
+    <script src="./jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".sp").click(function() {
+                swal.fire("You Pick The Color Thanks")
+            })
+        })
+    </script>
+</body>
+</html>
